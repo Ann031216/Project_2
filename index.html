@@ -6,11 +6,12 @@
         <title>Monticello</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Farro:wght@300;400;500;700&family=Francois+One&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Staatliches&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
         <link rel="stylesheet" href="./css/main.css">
         <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-        <link type="image/x-icon" href="./assets/favicons/favicon-32x32.png" rel="shortcut icon">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
     </head>
     <body>
        <header class="header">
@@ -21,6 +22,8 @@
                             <img src="./assets/svg/Logo.svg" alt="" class="logo__img">
                         </a>
                     </div>
+                     <!-- <input type="checkbox" id="burger-toggle"> -->
+                     <!-- <label for="burger-toggle" class="header__burger"><span></span></label> -->
                     <nav class="header__menu">
                         <ul class="header__list">
                             <li class="header__item">
@@ -132,6 +135,9 @@
                        <h3 class="project__subtitle">ONE WORLD</h3>
                        <h2 class="project__title">TRADE CENTER</h2>
                        <p class="project__text">Increasing prosperity in our lives can be accomplished by having the right frame of mind. The truth is, our thoughts are very powerful.</p>
+                       <p class="project__add hidden__text">
+                          Додатковий текст, який показується при натисканні More Details. Тут можна додати будь-яку інформацію про проект.
+                       </p>
                        <button class="project__btn">more details</button>
                        <p class="project__extra"><img src = "./assets/svg/location.svg" alt="logo_location"/>New York City, United States - 1776 feet</p>
                      </div>
@@ -145,6 +151,9 @@
                        <h3 class="project__subtitle">INTERNATIONAL</h3>
                        <h2 class="project__title">COMMERCE CENTRE</h2>
                        <p class="project__text">Successful businesses have many things in common, today we &aposll look at the big &lsquo;R&rsquo; of recognition and how a digital advertising network may help.</p>
+                       <p class="project__add hidden__text">
+                        Додатковий текст, який показується при натисканні More Details. Тут можна додати будь-яку інформацію про проект.
+                       </p>
                        <button class="project__btn">More details</button>
                        <p class="project__extra"><img src = "./assets/svg/location.svg" alt="logo_location"/>Hong Kong - 1588 feet</p>
                      </div>
@@ -195,8 +204,8 @@
       </div>
     </div>
 
-     <div class="news__card"> 
-      <img src="./assets/img/news_3.jpg" alt="News 1" class="news__card__img">
+     <div class="news__card">
+      <img src="./assets/img/news_1.jpg" alt="News 1" class="news__card__img">
       <h3 class="news__card__title">SEE THE UNMATCHED BEAUTY OF THE GREAT.</h3>
       <p class="news__card__text">Free directories: directories are perfect for customers that are searching for...</p>
       <div class="news__card__author">
@@ -209,7 +218,7 @@
     </div>
 
     <div class="news__card">
-      <img src="./assets/img/news_1.jpg" alt="News 2" class="news__card__img">
+      <img src="./assets/img/news_2.jpg" alt="News 2" class="news__card__img">
       <h3 class="news__card__title">EFFECTIVE ADVERTISING POINTERS.</h3>
       <p class="news__card__text">Having a home based business is a wonderful asset to your life...</p>
       <div class="news__card__author">
@@ -222,7 +231,7 @@
     </div>
 
     <div class="news__card">
-      <img src="./assets/img/news_2.jpg" alt="News 3" class="news__card__img">
+      <img src="./assets/img/news_3.jpg" alt="News 3" class="news__card__img">
       <h3 class="news__card__title">HYPNOTIZE YOURSELF INTO THE GHOST.</h3>
       <p class="news__card__text">There are many things that are important to catalog design...</p>
       <div class="news__card__author">
@@ -237,20 +246,27 @@
   </div>
 
 </section>
-  <section class="gallery">
+ <section class="gallery">
   <div class="container">
-    <h2 class="gallery__title">Gallery</h2>
+    <h2 class="gallery__title">GALLERY</h2>
+
     <div class="gallery__grid">
       <div class="gallery__big">
-        <img src="./assets/img/gallery_1.jpg" alt="Big image">
-        <div class="zoom__icon"></div>
+        <img src="./assets/img/gallery_1.jpg" alt="Main image">
       </div>
+
       <div class="gallery__small">
-        <img src="./assets/img/gallery_2.jpg" alt="Small image 1">
-        <img src="./assets/img/gallery_3.png" alt="Small image 2">
-        <img src="./assets/img/gallery_4.png" alt="Small image 3">
-        <img src="./assets/img/gallery_5.png" alt="Small image 4">
+        <img src="./assets/img/gallery_2.jpg" alt="Gallery image 1">
+        <img src="./assets/img/gallery_3.png" alt="Gallery image 2">
+        <img src="./assets/img/gallery_4.png" alt="Gallery image 3">
+        <img src="./assets/img/gallery_5.png" alt="Gallery image 4">
       </div>
+    </div>
+
+    <div class="gallery__extra">
+      <img src="./assets/img/gallery_2.jpg" alt="Gallery image 5" class="hidden">
+      <img src="./assets/img/gallery_3.png" alt="Gallery image 6" class="hidden">
+      <img src="./assets/img/gallery_5.png" alt="Gallery image 7" class="hidden">
     </div>
 
     <button class="gallery__btn">SEE MORE</button>
@@ -319,6 +335,8 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="./js/burger.js"></script>
+        <script src="./js/card_news.js"></script>
         <script src="./js/jquery.js"></script>
         <script src="./js/slider.js"></script>
         <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
